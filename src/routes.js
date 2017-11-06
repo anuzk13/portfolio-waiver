@@ -7,8 +7,8 @@ import Project from './views/Project';
 
 export default (
     <Switch>
-        <Route exact path='/' component={Home}/>
-        <Route path='/projects/:tag' component={ProjectList}/>
-        <Route path='/project/:id' component={Project}/>
+        <Route exact path='/portfolio/' component={Home}/>
+        <Route path='/portfolio/projects/:tag' component={ProjectList}/>
+        <Route path='/portfolio/project/:id' component={Project}/>
     </Switch>
 );

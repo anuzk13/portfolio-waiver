@@ -29,7 +29,7 @@ class ProjectList extends Component {
     const projectItems = projects.map( 
         project => 
             <div key={project.id} >
-                <Link to={`/project/${project.id}`}>{project.name}</Link>
+                <Link to={`/portfolio/project/${project.id}`}>{project.name}</Link>
             </div>)
     return (
       <div>

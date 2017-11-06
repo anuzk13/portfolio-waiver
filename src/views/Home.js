@@ -6,7 +6,7 @@ class Home extends Component {
     return (
       <div>
           Tags:
-          <Link to={`/projects/art_direction`}>Art Direction + Human Centered Design</Link>
+          <Link to={`/portfolio/projects/art_direction`}>Art Direction + Human Centered Design</Link>
       </div>
     );
   }
