@@ -1,0 +1,18 @@
+{
+    "api": {
+      "url": "https://api.behance.net/v2/",
+      "key": "8wRDT6L3U09dO30JVaw1WZGAkGdYXI2r",
+      "user": "amcardenas",
+      "routes": {
+          "user":"users/%(user)s",
+          "userProjects":"users/%(user)s/projects",
+          "project":"projects/%(project)d"
+      }
+    },
+    "projects": {
+      "education":[],
+      "health":[],
+      "art_direction":[57351657, 57349541]
+    }
+  }
+  
