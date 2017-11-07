@@ -1,2 +1,8 @@
-@import 'footer.scss';
-@import 'animations.scss';
+//Base
+@import './base/layout.scss';
+
+//Elements
+@import './objects/footer.scss';
+@import './objects/sprites.scss';
+@import './objects/intro.scss';
+@import './objects/home.scss'
