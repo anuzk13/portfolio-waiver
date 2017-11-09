@@ -9,6 +9,12 @@
           "project":"projects/%(project)d"
       }
     },
+    "contact":{
+      "email":"am.cardenas927@gmail.com",
+      "behanced":"https://losandes.ccnsite.com/amcardenas",
+      "linkedin":"https://linkedin.com/in/ana-cardenas-gasca",
+      "github":"https://github.com/anuzk13/"
+    },
     "projects": {
       "education": {
         "ids": [57351657, 57349541],

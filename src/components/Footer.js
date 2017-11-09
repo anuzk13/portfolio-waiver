@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
+import config from '../config';
 
 class Footer extends Component {
   render() {
     return (
       <div className="footer">
           <span> Ana Maria </span><span> 2017 </span>
-          <a className="github">
+          <a href={config.contact.github} className="github">
           </a>
-          <a className="behanced">
+          <a href={config.contact.behanced} className="behanced">
+          </a>
+          <a href={config.contact.linkedin} className="linkedin">
           </a>
       </div>
     );

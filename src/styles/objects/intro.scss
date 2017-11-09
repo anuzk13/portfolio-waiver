@@ -16,7 +16,10 @@
   }
 
   > p {
-    color: $primary-color;
+    color: white;
+    > a {
+      color: $primary-color;
+    }
   }
 
 }
