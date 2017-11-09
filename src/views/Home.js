@@ -2,27 +2,22 @@ import React, { Component } from 'react';
 import ProjectTag from '../components/ProjectTag';
 import Sprite from '../components/Sprite';
 import Intro from '../components/Intro';
-import m1_sprites from '../styles/spritesheets/m1_sprites.png';
-import m2_sprites from '../styles/spritesheets/m2_sprites.png';
-import m3_sprites from '../styles/spritesheets/m3_sprites.png';
-import girl_sprites from '../styles/spritesheets/girl_sprites.png';
+import images from '../styles/images';
+import config from '../config';
 
 class Home extends Component {
   
   render() {
-
-    //Titles
-    const m1_titles = ['Design+ ', 'Engineering+', 'Education'];
-    const m2_titles = ['Healthcare+ ', 'Visualization+', 'Information Systems'];
-    const m3_titles = ['Illustration+ ', 'Art Direction+', 'Human Centered Design'];
+    const tags = Object.keys(config.projects);
+    const projectTags = tags.map( tag => 
+      <ProjectTag key={tag} titles={config.projects[tag].titles} sprite={images[config.projects[tag].sprite]} name={config.projects[tag].name} tag={tag}/>
+    )
     return (
       <div>
         <Intro/>
-        <Sprite spriteClass={'anim-container girl'} sprite={girl_sprites}/>
+        <Sprite spriteClass={'anim-container girl'} sprite={images.girl_sprites}/>
         <div className="rain"></div>
-        <ProjectTag titles={m1_titles} sprite={m1_sprites} name={'m1'} tag='education'/>
-        <ProjectTag titles={m2_titles} sprite={m2_sprites} name={'m2'} tag='health'/>
-        <ProjectTag titles={m3_titles} sprite={m3_sprites} name={'m3'} tag='artDirection'/>
+        {projectTags}
       </div>
     );
   }

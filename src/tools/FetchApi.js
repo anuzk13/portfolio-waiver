@@ -17,7 +17,6 @@ class FetchApi {
     const res = sprintf(config.api.routes[resource], params);
     const client_id = `?client_id=${config.api.key}`;
     const url = `${config.api.url}${res}${client_id}`;
-    console.log(url);
     return fetchJsonp(url).then(function(response) {
       return response.json()
     }).then(function(json) {

@@ -1,0 +1,28 @@
+@import '../base/vars.scss';
+
+.project-list {
+    .rain {
+        .title {
+            margin-top: 5vh;
+            color: white;
+            font-family: 'Amatic SC', cursive;
+            font-size:  3vw;
+            font-weight: bold;
+            color: white;
+            > span {
+                background-color: $highlighted-color;
+            } 
+        }
+    }
+
+    .projects {
+        width: 80%;
+        margin-left: 20%;
+        overflow-y: auto;
+        height: -webkit-fill-available;
+        .description {
+            padding: 3em;
+        }
+
+    }
+}

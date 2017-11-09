@@ -9,7 +9,7 @@
   position: fixed;
 
   &:hover {
-    background: none;
+    animation: rain-play .4s steps(3) infinite;
   }
 } 
 

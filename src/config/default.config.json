@@ -10,9 +10,27 @@
       }
     },
     "projects": {
-      "education":[],
-      "health":[],
-      "artDirection":[57351657, 57349541]
+      "education": {
+        "ids": [57351657, 57349541],
+        "titles": ["Design+ ", "Engineering", "Education"],
+        "sprite":"m1_sprites",
+        "name":"m1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+      },
+      "health": {
+        "ids": [57351657, 57349541],
+        "titles": ["Healthcare+ ", "Visualization", "Information Systems"],
+        "sprite":"m2_sprites",
+        "name":"m2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+      },
+      "artDirection": {
+        "ids": [57351657, 57349541],
+        "titles": ["Illustration+ ", "Art Direction+", "Human Centered Design"],
+        "sprite":"m3_sprites",
+        "name":"m3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+      }
     }
   }
   

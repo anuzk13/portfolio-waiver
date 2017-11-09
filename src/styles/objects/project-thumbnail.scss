@@ -1,0 +1,27 @@
+@import '../base/vars.scss';
+
+.p-thumbnail {
+    padding: 2em;
+    > a {
+        text-decoration: none;
+        display: flex; flex-flow: row;
+        > img {
+
+        }
+        .project-info {
+            text-align: center;
+            padding: 2em;
+            width: 100%;
+            color: #000000;
+            background: #dce1ef;
+            .name {
+                font-weight: bold;
+                font-variant-caps: small-caps;
+                font-size: 2em;
+            }
+            .date {
+
+            }
+        }
+    }    
+}

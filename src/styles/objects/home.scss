@@ -20,6 +20,13 @@
   }
 }
 
+.project-tag {
+  color: white;
+  > span {
+      background-color: $highlighted-color;
+  } 
+}
+
 .m1 {
   left: 30%
 }
