@@ -3,32 +3,64 @@
 .project-list {
     .list-intro {
         float: left;
-        width: 18vw;
         padding: 1vw;
-        height: -webkit-fill-available;
+        @media screen and (max-width: $break-small) {
+            height: initial;
+            width: 98vw;
+            .title {
+                width: 100%;
+                text-align: center;
+                span {
+                    font-size: 3vh;
+                    font-weight: bold;
+                    vertical-align: middle;
+                    line-height: $tag-title-size;
+                }
+            }
+            .description {
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: $break-large) {
+            height: -webkit-fill-available;
+            width: 18vw;
+            .title {
+                float: none;
+                position: relative;
+                span {
+                    font-size: 3vh;
+                    font-weight: bold;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    padding: 1vh
+                }
+            }
+            .description {
+                float: none;
+            }
+        }
         div {
             width: $tag-title-size;
         }
         .title {
             height: $tag-title-size;
             background: $accent-color;
-            position: relative;
-            span {
-                font-size: 3vh;
-                font-weight: bold;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                padding: 1vh
-            }
         }
         .description {
             padding-top: 15px;
         }
     }
     .projects {
-        width: 80vw;
-        overflow-y: auto;
-        height: -webkit-fill-available;
+        @media screen and (max-width: $break-small) { 
+            width: 100vw;
+            overflow-y: auto;
+            height: -webkit-fill-available;
+        }
+        @media screen and (min-width: $break-large) {
+            width: 80vw;
+            overflow-y: auto;
+            height: -webkit-fill-available;
+        }
     }
 }

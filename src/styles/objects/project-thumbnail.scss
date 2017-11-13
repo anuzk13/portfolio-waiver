@@ -4,9 +4,19 @@
     padding: 2em;
     > a {
         text-decoration: none;
-        display: flex; flex-flow: row;
-        > img {
-
+        @media screen and (max-width: $break-small) {
+           display: inline;
+        }
+        @media screen and (min-width: $break-large) {
+            display: flex; flex-flow: row;
+        }
+        > div  {
+            width: 100%;
+            > img {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+            }
         }
         .project-info {
             text-align: center;

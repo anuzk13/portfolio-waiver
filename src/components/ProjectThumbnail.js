@@ -6,8 +6,8 @@ class ProjectThumbnail extends Component {
   render() {
     const {project, inversed} = this.props;
     const created = moment(project.published_on * 1000).calendar();
-    const initialImg = inversed ? <img src={project.covers['404']} alt={module.id}></img>: null;
-    const finalImg = !inversed ? <img src={project.covers['404']} alt={module.id}></img>: null;
+    const initialImg = inversed ? <div><img src={project.covers['404']} alt={module.id}></img></div>: null;
+    const finalImg = !inversed ? <div><img src={project.covers['404']} alt={module.id}></img></div>: null;
     return (
       <div className="p-thumbnail">
             <Link to={`/portfolio/project/${project.id}`}>
