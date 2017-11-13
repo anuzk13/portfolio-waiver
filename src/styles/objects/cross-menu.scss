@@ -1,0 +1,197 @@
+@import '../base/vars.scss';
+
+@mixin title-anim($index) {
+    $pop-time: calc(#{$title-time} * (#{$index} + 1));
+    animation: square-from-centre  $pop-time linear forwards;
+    animation-delay: calc(#{$cross-time} + #{$title-time} * (#{$index}));
+    span {
+        animation: text-appear 1s linear forwards;
+        animation-delay: calc(#{$cross-time} + #{$title-time} * #{$index} + #{$pop-time});
+    }
+}
+
+@mixin title-hover($left-transition) {
+    .title {
+        .title-cont {
+            transition: background-color 0.5s;
+        }
+    }
+    @if $left-transition {
+        transition: width 0.5s, height 0.5s, left 0.5s;
+        &:hover {
+            left: calc(50vw - #{$intro-size} - #{$title-margin});
+        }
+   } @else {
+        transition: width 0.5s, height 0.5s, color 0.5s;
+   }
+   &:hover {
+        width: $intro-size;
+        height: $intro-size;
+        color: white;
+        .title {
+            .title-cont {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.cross-menu {
+    height: 100vh;
+    text-align: center;
+
+    a { 
+        color: black;
+    }    
+
+    .cross { 
+        width: $cross-size;
+        height: $cross-size;
+        margin-top: calc((100vh - #{$cross-size})/2);
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+
+        .crossline {
+            fill: none;
+            stroke: black;
+            stroke-width: 15;
+            animation: expand-from-centre $cross-time linear forwards; 
+        }
+    }
+
+    .tag-title {
+        background-color: white;
+        width: $title-size;
+        height: $title-size;
+        position: fixed;
+        z-index: 3;
+        .title {
+            overflow: hidden;
+            width: 0;
+            height: 0;
+            .title-cont {
+                width: 100%;
+                height: 100%;
+                background: $secondary-color;
+                span {
+                    padding-top: 50%;
+                    display: block;
+                    color: #f4f4f4;
+                    max-width: 10vh;
+                    text-align: left;
+                    margin-left: 5px;
+                    &.name {
+                        padding: 5%;
+                        text-align: left;
+                        font-size: 3vh;
+                    }
+                    &.present {
+                        padding: 5%;
+                        text-align: left;
+                        font-weight: bold;
+                        font-size: 3.5vh;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        &.presentation {
+            bottom: calc((100vh - #{$cross-size})/2 + #{$cross-size}/2 + #{$title-margin});
+            left: calc(50vw - #{$intro-size} - #{$title-margin});
+            width: $intro-size;
+            height: $intro-size;
+            .title {
+                @include title-anim(0);
+                background: $accent-color;
+                .title-cont {
+                    background: none;
+                }
+            }
+        }
+        &.one {
+            bottom: calc((100vh - #{$cross-size})/2 + #{$cross-size}/2 + #{$title-margin});
+            left: calc(50vw + #{$title-margin});
+            @include title-hover(false);
+            .title {
+                @include title-anim(1);
+                background: url('img/games.png');
+                background-size: cover;
+            }
+        }
+        &.two {
+            top: calc((100vh - #{$cross-size})/2 + #{$cross-size}/2 + #{$title-margin});
+            left: calc(50vw + #{$title-margin});
+            @include title-hover(false);
+            .title {
+                @include title-anim(2);
+                background: url('img/health.png');
+                background-size: cover;
+            }
+        }
+        &.three {
+            top: calc((100vh - #{$cross-size})/2 + #{$cross-size}/2 + #{$title-margin});
+            left: calc(50vw - #{$title-size} - #{$title-margin});
+            @include title-hover(true);
+            .title {
+                @include title-anim(3);
+                background: url('img/art.png');
+                background-size: cover;
+            }
+        }
+        
+    }
+
+}
+
+@keyframes square-from-centre
+{
+    from {
+        width: 0;
+        height: 0;
+        margin: 50%;
+    }
+
+    to {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+}
+
+@keyframes text-appear 
+{
+    from {
+        color: $secondary-color;
+    }
+
+    to {
+        color: inherit;
+    }
+
+}
+
+@keyframes intro-appear 
+{
+    from {
+        color: $accent-color;
+    }
+
+    to {
+        color: inherit;
+    }
+
+}
+
+@keyframes expand-from-centre
+{
+    from {
+        stroke-dasharray: 0 300;
+        stroke-dashoffset: -150;
+    }
+
+    to {
+        stroke-dasharray: 300 300;
+        stroke-dashoffset: 0;
+    }
+}

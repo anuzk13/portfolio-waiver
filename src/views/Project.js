@@ -30,7 +30,7 @@ class Project extends Component {
     return (
       <div className="project">
         <div className="modules">
-          <div className="project-title">
+          <div>
             {display}
           </div>
           {columns}

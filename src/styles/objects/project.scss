@@ -11,17 +11,6 @@
         max-width: 60%;
         margin-left: 20%;
         margin-top: 10vh;
-        .project-title{
-            margin-left: -10%;
-            font-family: 'Amatic SC', cursive;
-            max-width: 50%;
-            text-align: left;
-            font-size:  3vw;
-            color: white;
-            > span {
-                background: $highlighted-color;
-            }
-        }
         .module {
             text-align: center;
             padding: 1em;
