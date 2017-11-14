@@ -2,7 +2,7 @@
 
 @mixin title-anim($index) {
     $pop-time: calc(#{$title-time} * (#{$index} + 1));
-    animation: square-from-centre  $pop-time linear forwards;
+    animation: square-from-centre $pop-time linear forwards;
     animation-delay: calc(#{$cross-time} + #{$title-time} * (#{$index}));
     span {
         animation: text-appear 1s linear forwards;
@@ -14,15 +14,18 @@
     .title {
         .title-cont {
             transition: background-color 0.5s;
+            -webkit-transition: background-color 0.5s; /* Safari */
         }
     }
     @if $left-transition {
         transition: width 0.5s, height 0.5s, left 0.5s;
+        -webkit-transition: width 0.5s, height 0.5s, left 0.5s;
         &:hover {
             left: calc(50vw - #{$intro-size} - #{$title-margin});
         }
    } @else {
         transition: width 0.5s, height 0.5s, color 0.5s;
+        -webkit-transition: width 0.5s, height 0.5s, color 0.5s;
    }
    &:hover {
         width: $intro-size;
@@ -102,7 +105,12 @@
             width: $intro-size;
             height: $intro-size;
             .title {
-                @include title-anim(0);
+                animation: square-from-centre 0.1s linear forwards;
+                animation-delay: 0.4s;
+                span {
+                    animation: text-appear 1s linear forwards;
+                    animation-delay: 0.4s;
+                }
                 background: $accent-color;
                 .title-cont {
                     background: none;
@@ -114,7 +122,12 @@
             left: calc(50vw + #{$title-margin});
             @include title-hover(false);
             .title {
-                @include title-anim(1);
+                animation: square-from-centre 0.2s linear forwards;
+                animation-delay: 0.5s;
+                span {
+                    animation: text-appear 1s linear forwards;
+                    animation-delay: 0.7s;
+                }
                 background: url('img/games.png');
                 background-size: cover;
             }
@@ -124,7 +137,12 @@
             left: calc(50vw + #{$title-margin});
             @include title-hover(false);
             .title {
-                @include title-anim(2);
+                animation: square-from-centre 0.3s linear forwards;
+                animation-delay: 0.6s;
+                span {
+                    animation: text-appear 1s linear forwards;
+                    animation-delay: 0.8s;
+                }
                 background: url('img/health.png');
                 background-size: cover;
             }
@@ -134,7 +152,12 @@
             left: calc(50vw - #{$title-size} - #{$title-margin});
             @include title-hover(true);
             .title {
-                @include title-anim(3);
+                animation: square-from-centre 0.4s linear forwards;
+                animation-delay: 0.7s;
+                span {
+                    animation: text-appear 1s linear forwards;
+                    animation-delay: 0.9s;
+                }
                 background: url('img/art.png');
                 background-size: cover;
             }
@@ -159,6 +182,21 @@
     }
 }
 
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes square-from-centre {
+    from {
+        width: 0;
+        height: 0;
+        margin: 50%;
+    }
+
+    to {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+} 
+
 @keyframes text-appear 
 {
     from {
@@ -170,6 +208,17 @@
     }
 
 }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes text-appear {
+    from {
+        color: $secondary-color;
+    }
+
+    to {
+        color: inherit;
+    }
+} 
 
 @keyframes intro-appear 
 {
@@ -183,8 +232,32 @@
 
 }
 
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes intro-appear {
+    from {
+        color: $accent-color;
+    }
+
+    to {
+        color: inherit;
+    }
+} 
+
 @keyframes expand-from-centre
 {
+    from {
+        stroke-dasharray: 0 300;
+        stroke-dashoffset: -150;
+    }
+
+    to {
+        stroke-dasharray: 300 300;
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes expand-from-centre {
     from {
         stroke-dasharray: 0 300;
         stroke-dashoffset: -150;

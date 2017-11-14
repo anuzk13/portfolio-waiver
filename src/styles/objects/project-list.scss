@@ -22,8 +22,7 @@
             }
         }
         @media screen and (min-width: $break-large) {
-            height: -webkit-fill-available;
-            width: 18vw;
+            width: 15vw;
             .title {
                 float: none;
                 position: relative;
@@ -52,15 +51,12 @@
         }
     }
     .projects {
+        float: left;
         @media screen and (max-width: $break-small) { 
             width: 100vw;
-            overflow-y: auto;
-            height: -webkit-fill-available;
         }
         @media screen and (min-width: $break-large) {
             width: 80vw;
-            overflow-y: auto;
-            height: -webkit-fill-available;
         }
     }
 }
