@@ -21,7 +21,6 @@ class ProjectThumbnail extends Component {
                 </div>
             </div>
             {finalImg}
-            <div className="overlay"></div>
         </Link>
       </div>
     );
