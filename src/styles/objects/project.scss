@@ -9,14 +9,18 @@
     .modules {
         background: white;
         max-width: 60%;
-        margin-left: 20%;
+        margin-left: 20vw;
         margin-top: 10vh;
         .module {
             text-align: center;
             padding: 1em;
-        
+            max-width: 90vw;
             .image {
-                
+                > img {
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                }
             }
             .text {
                 text-align: left;

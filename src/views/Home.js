@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ProjectTag from '../components/ProjectTag';
 import Intro from '../components/Intro';
+import Footer from '../components/Footer';
 import config from '../config';
 
 class Home extends Component {
@@ -22,6 +23,7 @@ class Home extends Component {
         </svg>
         <Intro/>
         { projectTags }
+        <Footer/>
       </div>
     );
   }

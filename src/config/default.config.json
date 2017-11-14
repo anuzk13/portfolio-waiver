@@ -1,7 +1,7 @@
 {
     "api": {
       "url": "https://api.behance.net/v2/",
-      "key": "8wRDT6L3U09dO30JVaw1WZGAkGdYXI2r",
+      "key": "t4ikmiA7yl0yrEjyYBNuVLk4gZJJzK8y",
       "user": "amcardenas",
       "routes": {
           "user":"users/%(user)s",
@@ -17,22 +17,22 @@
     },
     "projects": {
       "education": {
-        "ids": [57351657, 57349541],
+        "ids": [58680071, 58665691, 58643961, 58804335],
         "title": "Games in Education",
         "class": "one",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "description": "I believe that education is the key to break the chain of inequality. It might sound a bit cliché but, in particular in STEM, we need to open as much gates as we can because engineering and science are creating the paths of the future and we need as many people as diverse as possible making the important decisions and taking part on issues that matter."
       },
       "health": {
-        "ids": [57351657, 57349541],
+        "ids": [58684725, 58680071, 58805315],
         "title": "Health Systems",
         "class": "two",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "description": "I have worked on projects related to health systems mainly in the field of data visualization. I am currently working on a colombian company that offers software solutions for radiologists but my team in research is working on kickstarting a new unit for digital patholgy, cool uh?."
       },
       "artDirection": {
-        "ids": [57351657, 57349541],
+        "ids": [57351657, 58805991, 58806285, 58682927],
         "title": "Art & Design",
         "class": "three",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "description": "This collection has some samples of my work arround llustration, game design, art direction and 3d modeling. I am a passionate storyteller. I have found in illustration and art direction the best tools for this purpose. I believe that a good story deserves to be told in the right way and art and design are some terrific companions when combined with engineering for this purpose!"
       }
     }
   }

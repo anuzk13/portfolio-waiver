@@ -16,6 +16,7 @@ class ProjectList extends Component {
     };
     FetchApi.get('userProjects',  { user: config.api.user }).then(
         response => {
+            console.log(response.projects);
             const projects = response.projects.filter (
                 project => config.projects[this.projectTag].ids.includes(project.id));
             this.setState({ projects });

@@ -12,6 +12,7 @@ class Project extends Component {
     this.projectId = props.match.params.id;
     FetchApi.get('project',  { project: this.projectId}).then(
         response => {
+          console.log(response)
             this.setState({ project : response.project});
         }
     );
@@ -30,9 +31,6 @@ class Project extends Component {
     return (
       <div className="project">
         <div className="modules">
-          <div>
-            {display}
-          </div>
           {columns}
         </div>
       </div>
