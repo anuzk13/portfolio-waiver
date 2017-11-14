@@ -15,6 +15,88 @@
       "linkedin":"https://linkedin.com/in/ana-cardenas-gasca",
       "github":"https://github.com/anuzk13/"
     },
+    "projectList" :[  
+      {  
+         "id":58684725,
+         "name":"Kangaroo Mother Care Indicators System",
+         "published_on":1510288567,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/93522f58684725.Y3JvcCw1ODgsNDYwLDYwLDIzNg.png"
+         }
+      },
+      {  
+         "id":58682927,
+         "name":"Lion Hearted",
+         "published_on":1510281894,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/0a79ac58682927.Y3JvcCwxMDE3LDc5NiwyNSwzMg.png"
+         }
+      },
+      {  
+         "id":58680071,
+         "name":"SPINE Game",
+         "published_on":1510272968,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/178dd358680071.Y3JvcCwxMDc0LDg0MSwyMywxNQ.png"
+         }
+      },
+      {  
+         "id":58665691,
+         "name":"Json in the Big O",
+         "published_on":1510256172,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/1287a358665691.Y3JvcCwxMTg4LDkzMCw5NzEsNjc.png"
+         }
+      },
+      {  
+         "id":58643961,
+         "name":"Mision Domobotics: Education in Robotics",
+         "published_on":1510198856,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/8ad10258643961.Y3JvcCwxNjIzLDEyNzEsNTIsMA.png"
+         }
+      },
+      {  
+         "id":57351657,
+         "name":"Conversation Threads : Brand analysis and Art direction",
+         "published_on":1506992363,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/b0b85457351657.Y3JvcCwyMzY3LDE4NTMsMCw2MzE.jpg"
+         }
+      },
+      {  
+         "id":58805991,
+         "name":"Pattern Design",
+         "published_on":1506992363,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/2814ec58805991.Y3JvcCwxNjg0LDEzMTgsMCwxODI.png"
+         }
+      },
+      {  
+         "id":58806285,
+         "name":"Parametric 3D Models",
+         "published_on":1506992363,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/1c84f358806285.Y3JvcCw4NzUsNjg1LDAsMjU.png"
+         }
+      },
+      {  
+         "id":58805315,
+         "name":"Case Studies for Insight Generation of Braviz",
+         "published_on":1506992363,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/7c71a458805315.Y3JvcCwxMjk2LDEwMTQsNjQzLDk5.png"
+         }
+      },
+      {  
+         "id":58804335,
+         "name":"Alpina for kids challenge",
+         "published_on":1506992363,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/c451b358804335.Y3JvcCw2MDQsNDczLDQxOSw3NA.png"
+         }
+      }
+   ],
     "projects": {
       "education": {
         "ids": [58680071, 58665691, 58643961, 58804335],

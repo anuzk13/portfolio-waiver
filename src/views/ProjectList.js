@@ -9,19 +9,13 @@ class ProjectList extends Component {
     super(props, context);
     this.projectTag = props.match.params.tag;
     const tagProps = config.projects[this.projectTag];
+    const projects = config.projectList.filter (
+        project => config.projects[this.projectTag].ids.includes(project.id));
     this.state = {
-      projects: [],
+      projects,
       title: tagProps.title,
       description: tagProps.description
     };
-    FetchApi.get('userProjects',  { user: config.api.user }).then(
-        response => {
-            console.log(response.projects);
-            const projects = response.projects.filter (
-                project => config.projects[this.projectTag].ids.includes(project.id));
-            this.setState({ projects });
-        }
-    );
   }
 
   componentWillReceiveProps(nextProps) {
