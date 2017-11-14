@@ -5,7 +5,7 @@ class ImageModule extends Component {
     const { module } = this.props;
     return (
         <div className="image">
-            <img src={module.src} alt={module.id}></img>
+            <img src={module.sizes["1400"]} alt={module.sizes["1400"]}></img>
         </div>
     );
   }

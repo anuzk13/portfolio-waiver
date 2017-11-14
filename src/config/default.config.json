@@ -1,7 +1,7 @@
 {
     "api": {
       "url": "https://api.behance.net/v2/",
-      "key": "8wRDT6L3U09dO30JVaw1WZGAkGdYXI2r",
+      "key": "t4ikmiA7yl0yrEjyYBNuVLk4gZJJzK8y",
       "user": "amcardenas",
       "routes": {
           "user":"users/%(user)s",
@@ -15,27 +15,106 @@
       "linkedin":"https://linkedin.com/in/ana-cardenas-gasca",
       "github":"https://github.com/anuzk13/"
     },
+    "projectList" :[  
+      {  
+         "id":58684725,
+         "name":"Kangaroo Mother Care Indicators System",
+         "published_on":1510288567,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/93522f58684725.Y3JvcCw1ODgsNDYwLDYwLDIzNg.png"
+         }
+      },
+      {  
+         "id":58682927,
+         "name":"Lion Hearted",
+         "published_on":1510281894,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/0a79ac58682927.Y3JvcCwxMDE3LDc5NiwyNSwzMg.png"
+         }
+      },
+      {  
+         "id":58680071,
+         "name":"SPINE Game",
+         "published_on":1510272968,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/178dd358680071.Y3JvcCwxMDc0LDg0MSwyMywxNQ.png"
+         }
+      },
+      {  
+         "id":58665691,
+         "name":"Json in the Big O",
+         "published_on":1510256172,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/1287a358665691.Y3JvcCwxMTg4LDkzMCw5NzEsNjc.png"
+         }
+      },
+      {  
+         "id":58643961,
+         "name":"Mision Domobotics: Education in Robotics",
+         "published_on":1510198856,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/8ad10258643961.Y3JvcCwxNjIzLDEyNzEsNTIsMA.png"
+         }
+      },
+      {  
+         "id":57351657,
+         "name":"Conversation Threads : Brand analysis and Art direction",
+         "published_on":1506992363,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/b0b85457351657.Y3JvcCwyMzY3LDE4NTMsMCw2MzE.jpg"
+         }
+      },
+      {  
+         "id":58805991,
+         "name":"Pattern Design",
+         "published_on":1506992363,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/2814ec58805991.Y3JvcCwxNjg0LDEzMTgsMCwxODI.png"
+         }
+      },
+      {  
+         "id":58806285,
+         "name":"Parametric 3D Models",
+         "published_on":1506992363,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/1c84f358806285.Y3JvcCw4NzUsNjg1LDAsMjU.png"
+         }
+      },
+      {  
+         "id":58805315,
+         "name":"Case Studies for Insight Generation of Braviz",
+         "published_on":1506992363,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/7c71a458805315.Y3JvcCwxMjk2LDEwMTQsNjQzLDk5.png"
+         }
+      },
+      {  
+         "id":58804335,
+         "name":"Alpina for kids challenge",
+         "published_on":1506992363,
+         "covers":{  
+            "404":"https://mir-s3-cdn-cf.behance.net/projects/404/c451b358804335.Y3JvcCw2MDQsNDczLDQxOSw3NA.png"
+         }
+      }
+   ],
     "projects": {
       "education": {
-        "ids": [57351657, 57349541],
-        "titles": ["Design+ ", "Engineering", "Education"],
-        "sprite":"m1_sprites",
-        "name":"m1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "ids": [58680071, 58665691, 58643961, 58804335],
+        "title": "Games in Education",
+        "class": "one",
+        "description": "I believe that education is the key to break the chain of inequality. It might sound a bit cliché but, in particular in STEM, we need to open as much gates as we can because engineering and science are creating the paths of the future and we need as many people as diverse as possible making the important decisions and taking part on issues that matter."
       },
       "health": {
-        "ids": [57351657, 57349541],
-        "titles": ["Healthcare+ ", "Visualization", "Information Systems"],
-        "sprite":"m2_sprites",
-        "name":"m2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "ids": [58684725, 58680071, 58805315],
+        "title": "Health Systems",
+        "class": "two",
+        "description": "I have worked on projects related to health systems mainly in the field of data visualization. I am currently working on a colombian company that offers software solutions for radiologists but my team in research is working on kickstarting a new unit for digital patholgy, cool uh?."
       },
       "artDirection": {
-        "ids": [57351657, 57349541],
-        "titles": ["Illustration+ ", "Art Direction+", "Human Centered Design"],
-        "sprite":"m3_sprites",
-        "name":"m3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "ids": [57351657, 58805991, 58806285, 58682927],
+        "title": "Art & Design",
+        "class": "three",
+        "description": "This collection has some samples of my work arround llustration, game design, art direction and 3d modeling. I am a passionate storyteller. I have found in illustration and art direction the best tools for this purpose. I believe that a good story deserves to be told in the right way and art and design are some terrific companions when combined with engineering for this purpose!"
       }
     }
   }

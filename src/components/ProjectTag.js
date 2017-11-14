@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Sprite from './Sprite';
 
 class ProjectTag extends Component {
 
   render() {
-    const {sprite, titles, name, tag} = this.props;
-    const rainClass = `rain ${name}`;
-    const spriteClass = `anim-container ${name}-sprite`;
+    const {title, name, tag} = this.props;
+    const tagClass = `tag-title ${name}`;
     return (
-      
-      <div className={rainClass}>
-        <div className="work-header">
-          <Link to={`/portfolio/projects/${tag}`}>
-            <span>{titles[0]}</span><br></br>
-            <span>{titles[1]}</span><br></br>
-            <span>{titles[2]}</span><br></br>
-          </Link>
+      <Link to={`/portfolio/projects/${tag}`}>
+        <div className={tagClass}>
+          <div className="title">
+            <div className="title-cont">
+              <span>
+                {title}
+              </span>
+            </div>
+          </div>
         </div>
-        <Sprite spriteClass={spriteClass} sprite={sprite}/>
-      </div>
+      </Link>
     );
   }
 }

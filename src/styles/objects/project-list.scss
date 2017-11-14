@@ -1,28 +1,62 @@
 @import '../base/vars.scss';
 
 .project-list {
-    .rain {
+    .list-intro {
+        float: left;
+        padding: 1vw;
+        @media screen and (max-width: $break-small) {
+            height: initial;
+            width: 98vw;
+            .title {
+                width: 100%;
+                text-align: center;
+                span {
+                    font-size: 3vh;
+                    font-weight: bold;
+                    vertical-align: middle;
+                    line-height: $tag-title-size;
+                }
+            }
+            .description {
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: $break-large) {
+            width: 15vw;
+            .title {
+                float: none;
+                position: relative;
+                span {
+                    font-size: 3vh;
+                    font-weight: bold;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    padding: 1vh
+                }
+            }
+            .description {
+                float: none;
+            }
+        }
+        div {
+            width: $tag-title-size;
+        }
         .title {
-            margin-top: 5vh;
-            color: white;
-            font-family: 'Amatic SC', cursive;
-            font-size:  3vw;
-            font-weight: bold;
-            color: white;
-            > span {
-                background-color: $highlighted-color;
-            } 
+            height: $tag-title-size;
+            background: $accent-color;
+        }
+        .description {
+            padding-top: 15px;
         }
     }
-
     .projects {
-        width: 80%;
-        margin-left: 20%;
-        overflow-y: auto;
-        height: -webkit-fill-available;
-        .description {
-            padding: 3em;
+        float: left;
+        @media screen and (max-width: $break-small) { 
+            width: 100vw;
         }
-
+        @media screen and (min-width: $break-large) {
+            width: 80vw;
+        }
     }
 }
