@@ -6,7 +6,8 @@
         padding: 1vw;
         @media screen and (max-width: $break-small) {
             height: initial;
-            width: 98vw;
+            width: 80%;
+            margin: 5%;
             .title {
                 width: 100%;
                 text-align: center;
