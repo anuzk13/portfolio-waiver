@@ -9,16 +9,20 @@
         background: black;
         @media screen and (max-width: $break-small) {
            display: inline;
+           > div  {
+                width: 40%;
+           }
         }
         @media screen and (min-width: $break-large) {
             display: flex; flex-flow: row;
+            > div  {
+                width: 40%;
+           }
         }
         > div  {
             background: white;
             > img {
-                width: auto;
-                height: auto;
-                max-height: 100%;
+                
             }
         }
         .project-info {
