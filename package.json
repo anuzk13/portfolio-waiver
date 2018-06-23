@@ -1,8 +1,8 @@
 {
-  "name": "portfolio",
+  "name": "portfolio-waiver",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anuzk13.github.io/portfolio",
+  "homepage": "https://anuzk13.github.io/portfolio-waiver",
   "dependencies": {
     "es6-promise": "^4.1.1",
     "fetch-jsonp": "^1.1.3",
