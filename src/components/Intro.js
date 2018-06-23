@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class Intro extends Component {
   render() {
     return (
-      <Link to={`/portfolio/profile`}>
+      <Link to={`/portfolio-waiver/profile`}>
         <div className="tag-title presentation">
           <div className="title">
             <div className="title-cont">

@@ -7,7 +7,7 @@ class ProjectTag extends Component {
     const {title, name, tag} = this.props;
     const tagClass = `tag-title ${name}`;
     return (
-      <Link to={`/portfolio/projects/${tag}`}>
+      <Link to={`/portfolio-waiver/projects/${tag}`}>
         <div className={tagClass}>
           <div className="title">
             <div className="title-cont">

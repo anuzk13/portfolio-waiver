@@ -10,7 +10,7 @@ class ProjectThumbnail extends Component {
     const finalImg = !inversed ? <div><img src={project.covers['404']} alt={module.id}></img></div>: null;
     return (
       <div className="p-thumbnail">
-        <Link to={`/portfolio/project/${project.id}`}>
+        <Link to={`/portfolio-waiver/project/${project.id}`}>
             {initialImg}
             <div className="project-info">
                 <div className="name"> 

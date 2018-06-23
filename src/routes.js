@@ -8,9 +8,9 @@ import Bio from './views/Bio';
 
 export default (
     <Switch>
-        <Route exact path='/portfolio/' component={Home}/>
-        <Route exact path='/portfolio/profile' component={Bio}/>
-        <Route path='/portfolio/projects/:tag' component={ProjectList}/>
-        <Route path='/portfolio/project/:id' component={Project}/>
+        <Route exact path='/portfolio-waiver/' component={Home}/>
+        <Route exact path='/portfolio-waiver/profile' component={Bio}/>
+        <Route path='/portfolio-waiver/projects/:tag' component={ProjectList}/>
+        <Route path='/portfolio-waiver/project/:id' component={Project}/>
     </Switch>
 );
