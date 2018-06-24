@@ -23,6 +23,18 @@
       background: url('icons/github.svg');
     }
 
+    &.waiver {
+      left: 20px;
+      background: #efff50;
+      width: 200px;
+      text-decoration: none;
+      height: 38px;
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
+
     &.behanced {
       right: 60px;
       background: url('icons/behanced.svg');

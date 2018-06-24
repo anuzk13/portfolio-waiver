@@ -5,6 +5,9 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer">
+          <a href={config.contact.waiver} className="waiver">
+            Waiver for the SI 539 Design of Complex Websites
+          </a>
           <span> Ana Maria </span><span> 2017 </span>
           <a href={config.contact.github} className="github">
           </a>
