@@ -10,22 +10,22 @@ class BehancedModule extends Component {
    *
    * @return {Component}
    */
-  getModule( module ) {
+  getModule( module, index ) {
     switch (module.type) {
       case 'image':
-        return <ImageModule module={module} />;
+        return <ImageModule module={module} index={index} />;
       case 'text':
-        return <TextModule module={module} />;
+        return <TextModule module={module} index={index} />;
       case 'embed':
-        return <EmbeddedModule module={module} />;
+        return <EmbeddedModule module={module} index={index} />;
       default:
         return null;
     }
   }
 
   render() {
-    const { module} = this.props;
-    const moduleElement = module ? this.getModule(module) : null;
+    const { module, index} = this.props;
+    const moduleElement = module ? this.getModule(module, index) : null;
     return (
       <div className="module">
           {moduleElement}

@@ -26,7 +26,7 @@ class Project extends Component {
     const { project } = this.state;
     const display = project ? project.name.split(' ').map( (word, index) => <span key={index}>{`${word} `}</span>) : '';
     const columns = project ? project.modules.map( 
-      (module, index) => <BehancedModule module={module} key={`module-${index}`}/>
+      (module, index) => <BehancedModule module={module} key={`module-${index}`} index={index+1}/>
     ) : null;
     return (
       <div className="project">
