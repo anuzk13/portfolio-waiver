@@ -10,10 +10,13 @@ class Footer extends Component {
           </a>
           <span> Ana Maria </span><span> 2017 </span>
           <a href={config.contact.github} className="github">
+            github link
           </a>
           <a href={config.contact.behanced} className="behanced">
+            behance link
           </a>
           <a href={config.contact.linkedin} className="linkedin">
+            linkedin link
           </a>
       </div>
     );

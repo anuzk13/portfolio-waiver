@@ -20,6 +20,7 @@
     
     &.github {
       right: 20px;
+      color: transparent;
       background: url('icons/github.svg');
     }
 
@@ -37,11 +38,13 @@
 
     &.behanced {
       right: 60px;
+      color: transparent;
       background: url('icons/behanced.svg');
     }
 
     &.linkedin {
       right: 100px;
+      color: transparent;
       background: url('icons/linkedin.svg');
     }
   }
