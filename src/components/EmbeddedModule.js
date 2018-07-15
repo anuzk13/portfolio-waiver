@@ -5,7 +5,7 @@ class EmbeddedModule extends Component {
     const { module, index } = this.props;
     return (
       <div>
-        <span tabIndex={index}>Embedded content</span>
+        <span tabIndex={index} className='embedded'>Embedded content</span>
         <div dangerouslySetInnerHTML={{__html: module.embed}}/>
       </div>
     );
