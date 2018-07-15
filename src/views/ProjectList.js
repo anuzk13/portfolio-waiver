@@ -25,15 +25,15 @@ class ProjectList extends Component {
   render() {
     const { projects, title, description} = this.state;
     const projectItems = projects.map((project, index) => 
-        <ProjectThumbnail inversed={index%2 === 0} key={project.id} project={project}/>)
+        <ProjectThumbnail inversed={index%2 === 0} key={project.id} project={project} index={index+3}/>)
     return (
       <div className="project-list">
           <div className="list-intro">
             <div className="title">
-              <span>{title}</span>
+              <span tabIndex="1">{title}</span>
             </div>
             <div className="description">
-              {description}
+              <p tabIndex="2"> {description}</p>
             </div>
           </div>
           <div className="projects">
